@@ -4,7 +4,7 @@
 
 .container {
   scrollbar-width: thin;
-  scrollbar-color: red rgb(153 102 255 / 0.25);
+  scrollbar-color: rgb(8, 7, 7) rgb(153 102 255 / 0.25);
 }
 
 /* Chrome, Edge, and Safari */
