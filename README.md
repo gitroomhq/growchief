@@ -1,30 +1,36 @@
-![top](https://user-images.githubusercontent.com/100117126/226394199-4072d339-5841-47b1-acab-2d2906c78d96.png)
-<h1 align="center"><a href="https://github20k.com">GitHub 20K</a> - GrowChief ⭐️✨</h1>
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-<p align="center">
-  <a href="https://opensource.org/licenses/MIT" target="_blank">
-    <img alt="License: MIT License" src="https://img.shields.io/badge/License-MIT License-yellow.svg" />
-  </a>
-</p>
+## Getting Started
 
-<p align="center">Build a pricing page with pricing tiers and charge customers</p>
+First, run the development server:
 
-<p align="center">
-  <img src="https://github.com/github-20k/growchief/assets/100117126/f0661e9c-2573-40d4-a6ba-1ba14d4123bd" align="center" />
-</p>
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
 
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-## GrowChief
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-What can you find here:
-- The full website code of GrowChief.com
+This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
+## Learn More
 
-## Installation
+To learn more about Next.js, take a look at the following resources:
 
-- copy `.env.example` to `.env` and add the missing variables.
-- Run `npm run dev`
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-## Please help me out by starring this repository
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-![starit](https://user-images.githubusercontent.com/100117126/226560726-9e6b5b7d-b881-4a3c-90e5-a190c5433866.gif)
+## Deploy on Vercel
+
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
