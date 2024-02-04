@@ -1,11 +1,11 @@
 /* eslint-disable @next/next/no-img-element */
-// import { Footer } from '@/components/layout/footer';
-// import { GitroomBox } from '@/components/layout/gitroom-box';
+import { Footer } from '@/components/layout/footer';
+import { GitroomBox } from '@/components/layout/gitroom-box';
 
 import { Faq } from './_containers/faq';
 import { Product } from './_containers/product';
 import { Pricing } from './_containers/pricing';
-// import { Newsletter } from './_containers/newsletter';
+import { Newsletter } from './_containers/newsletter';
 import { HeroSection } from './_containers/hero-section';
 import { Testemonials } from './_containers/testemonials';
 import { ProcessSection } from './_containers/process-section';
@@ -26,6 +26,9 @@ export default function Home() {
       <ProcessSection />
       <Faq />
       <Pricing />
+      <GitroomBox />
+      <Newsletter />
+      <Footer />
     </main>
   );
 }

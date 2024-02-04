@@ -19,7 +19,7 @@ export function HeroSection() {
       <Navbar />
       <section
         className="section flex flex-col items-center max-w-[1290px] mx-auto"
-        id="#"
+        id="#home"
       >
         <div className="flex w-full max-w-[1290px] flex-col items-center gap-[118px]">
           <div className="w-full max-h-[454px] flex items-start justify-between gap-8 max-md:gap-12 max-md:flex-col max-md:justify-center max-md:max-h-fit mt-20 max-md:items-center">

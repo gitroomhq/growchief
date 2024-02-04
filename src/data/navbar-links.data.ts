@@ -1,7 +1,7 @@
 export const navbarLinks = [
   {
     label: 'Home',
-    href: '#',
+    href: '#home',
   },
   {
     label: 'Product',

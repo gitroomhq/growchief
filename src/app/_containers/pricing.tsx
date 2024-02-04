@@ -129,14 +129,14 @@ export function Pricing() {
             alt="dots"
             className="-z-10 absolute top-1/2 -translate-y-1/2 -left-28 select-none"
           />
-          <div className="absolute top-1/2 left-0 -translate-y-1/2 bg-[#6C33C9] -z-10 h-[25.25rem] w-1/2 rounded-full blur-[10rem] select-none" />
+          <div className="absolute top-1/2 left-0 -translate-y-1/2 bg-[#6C33C9] -z-10 h-[15.25rem] w-1/2 rounded-full blur-[10rem] select-none" />
           <Card />
           <img
             src="/pricing/dots.png"
             alt="dots"
             className="-z-10 absolute top-1/2 -translate-y-1/2 -right-12 select-none"
           />
-          <div className="absolute top-1/2 right-0 -translate-y-1/2 bg-[#6C33C9] -z-10 h-[25.25rem] w-1/2 rounded-full blur-[10rem] select-none" />
+          <div className="absolute top-1/2 right-0 -translate-y-1/2 bg-[#6C33C9] -z-10 h-[15.25rem] w-1/2 rounded-full blur-[10rem] select-none" />
           <img
             src="/pricing/line.png"
             alt="Line"

@@ -47,7 +47,7 @@ export function Testemonials() {
             {testemonials.map((testemonial, index) => (
               <CarouselItem
                 key={index}
-                className="basis-[500px] border-none outline-none p-0 m-0 ml-[30px] max-md:basis-[230px] max-md:ml-[10px]"
+                className="basis-[500px] border-none outline-none p-0 m-0 ml-[30px] max-md:basis-[230px] max-md:ml-[55px]"
               >
                 <Testemonial {...testemonial} />
               </CarouselItem>

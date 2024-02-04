@@ -28,7 +28,7 @@ export function Navbar() {
         )}
       >
         <Link
-          href="#"
+          href="#home"
           className="inline-flex items-center gap-2 text-[#C8C8C8]"
         >
           <Image
