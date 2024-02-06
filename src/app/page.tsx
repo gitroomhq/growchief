@@ -11,9 +11,12 @@ import { Testemonials } from './_containers/testemonials';
 import { ProcessSection } from './_containers/process-section';
 import { BenefitsSection } from './_containers/benefits-section';
 
+// Import Swiper styles
+import 'swiper/css';
+
 export default function Home() {
   return (
-    <main className="relative min-h-svh w-full bg-black py-[34px] z-10 overflow-x-hidden">
+    <main className="relative min-h-svh w-full bg-black py-[34px] z-10 overflow-hidden">
       <img
         src="/hero-section-blur.svg"
         alt="Blur"

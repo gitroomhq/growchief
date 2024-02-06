@@ -20,18 +20,15 @@ export function Newsletter() {
             Growchief
           </h2>
           <p className="text-[#A4ACB9] max-w-[329px] leading-[150%] max-md:text-[16px]">
-            We do a whole week of launch around your prouct, including an
-            article, Reddit promotion, influencers posts, and so much more
+            We do a whole week of launch around your prouct, including an article, Reddit promotion, influencers posts,
+            and so much more
           </p>
         </div>
         <div className="flex flex-col items-start gap-[27px]">
           <h2 className="text-white text-[28px] font-medium max-md:text-[24px] max-md:text-left">
             Subscribe to Our Newsletter
           </h2>
-          <form
-            action={subscribeToNewsletter}
-            className="flex gap-3 items-center max-md:flex-col max-md:w-full"
-          >
+          <form action={subscribeToNewsletter} className="flex gap-3 items-center max-md:flex-col max-md:w-full">
             <Input
               name="email"
               type="email"

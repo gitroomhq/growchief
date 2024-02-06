@@ -24,19 +24,11 @@ export function Navbar() {
           'shadow-black/[0.03] backdrop-blur-[0.5rem] w-full rounded-[20px] bg-opacity-80 px-6 py-3 border max-w-[1290px] border-white flex justify-between items-center transition-all h-20 relative',
           {
             'border-b-0 rounded-b-[0]': isMobileMenuActive,
-          }
+          },
         )}
       >
-        <Link
-          href="#home"
-          className="inline-flex items-center gap-2 text-[#C8C8C8]"
-        >
-          <Image
-            src="/navbar-icon.png"
-            alt="navbar-icon"
-            width={40.48}
-            height={30}
-          />
+        <Link href="#home" className="inline-flex items-center gap-2 text-[#C8C8C8]">
+          <Image src="/navbar-icon.png" alt="navbar-icon" width={40.48} height={30} />
           Growchief
         </Link>
         <div className="flex items-center gap-14 max-md:hidden">
@@ -60,10 +52,7 @@ export function Navbar() {
           Star Us | 2.9k
         </Link>
         <div className="grid place-items-center md:hidden">
-          <button
-            className="text-white text-2xl p-0"
-            onClick={() => setIsMobileMenuActive((prev) => !prev)}
-          >
+          <button className="text-white text-2xl p-0" onClick={() => setIsMobileMenuActive(prev => !prev)}>
             {isMobileMenuActive ? <IoIosClose /> : <IoIosMenu />}
           </button>
         </div>
@@ -75,7 +64,7 @@ export function Navbar() {
               'flex h-[284px] border border-white border-t-0 flex-col items-center gap-10 w-full py-3 px-6 rounded-[20px] rounded-t-none md:rounded-t-none max-w-[94%] -left-[1px] transition-all shadow-black/[0.03] bg-transparent backdrop-blur-[0.5rem] max-md:max-w-full z-50',
               {
                 'visible-[hidden]': !isMobileMenuActive,
-              }
+              },
             )}
             animate={{
               opacity: [0, 1],

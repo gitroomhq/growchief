@@ -39,21 +39,15 @@ export function ProcessSection() {
           className="absolute top-20 left-0 min-h-[92%] max-md:hidden"
         />
         {processes.map((processItem, index) => (
-          <motion.div
+          <div
             className="w-full max-h-[324px] flex justify-between items-center max-md:flex-col max-md:justify-center max-md:max-h-fit max-md:gap-6"
             key={index}
-            whileInView={{
-              opacity: [0, 1],
-              translateY: [-100, 0],
-            }}
           >
             <div className="flex flex-col gap-6 items-start w-full max-w-[477px] max-md:items-center">
               <h2 className="text-white text-[46px] leading-[100%] font-medium max-md:text-[38px]">
                 {processItem.title}
               </h2>
-              <p className="text-[#D3D3D3] leading-[150%] text-[18px]">
-                {processItem.description}
-              </p>
+              <p className="text-[#D3D3D3] leading-[150%] text-[18px]">{processItem.description}</p>
             </div>
             <div className="w-full max-w-[420px] grid place-items-center relative h-full min-h-[324px]">
               <Image
@@ -63,22 +57,19 @@ export function ProcessSection() {
                 height={324}
                 className={cn('z-20', {
                   'absolute left-20 max-md:relative max-md:left-0':
-                    processItem.title ===
-                    'Topic Selection and Article Preparation',
+                    processItem.title === 'Topic Selection and Article Preparation',
                 })}
               />
               <img
                 src="/processes/dots.png"
                 alt="dots"
                 className={cn('absolute z-10', {
-                  'left-16':
-                    processItem.title ===
-                    'Topic Selection and Article Preparation',
+                  'left-16': processItem.title === 'Topic Selection and Article Preparation',
                 })}
               />
               <div className="absolute inset-0 z-10 select-none bg-[#6C33C9] h-full rounded-full blur-[10rem] opacity-80" />
             </div>
-          </motion.div>
+          </div>
         ))}
       </div>
     </section>

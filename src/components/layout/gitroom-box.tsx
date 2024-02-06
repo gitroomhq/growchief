@@ -17,8 +17,7 @@ const DesktopVersion = () => (
         Go with us!
       </SectionTitle>
       <p className="text-[#D3D3D3] max-w-[515px] z-30 leading-[150%] text-[18px]">
-        We merge tech with marketing. Helping you trend on different platforms.
-        Gain genuine clients, effortlessly.
+        We merge tech with marketing. Helping you trend on different platforms. Gain genuine clients, effortlessly.
       </p>
       <GradientButton className="max-w-[180px] z-30" />
     </div>
@@ -53,15 +52,10 @@ const MobileVersion = () => (
         Ready to <br /> build <br /> something? <br /> Go with us!
       </SectionTitle>
       <p className="text-center w-full max-w-[268px] text-[16px] leading-[150%] text-[#D3D3D3] mx-auto mb-6">
-        We merge tech with marketing. Helping you trend on different platforms.
-        Gain genuine clients, effortlessly.
+        We merge tech with marketing. Helping you trend on different platforms. Gain genuine clients, effortlessly.
       </p>
       <GradientButton className="max-w-[240px] text-[20px] z-30 mx-auto min-h-[58px]" />
-      <img
-        src="/git-room-dots.png"
-        alt="Dots"
-        className="absolute -z-20 bottom-0 left-1/2 -translate-x-1/2"
-      />
+      <img src="/git-room-dots.png" alt="Dots" className="absolute -z-20 bottom-0 left-1/2 -translate-x-1/2" />
     </div>
     <div className="flex-[1]">
       <Image
@@ -79,10 +73,7 @@ export function GitroomBox() {
   const { isMd } = useBreakpoints();
 
   return (
-    <motion.section
-      className="section w-full flex justify-center items-center relative"
-      whileInView={{ opacity: [0.65, 1], translateX: [-100, 0] }}
-    >
+    <section className="section w-full flex justify-center items-center relative">
       <div
         className="p-[1px] w-full max-w-[1287px] min-h-[444px] rounded-[40px] max-md:min-h-fit"
         style={{
@@ -92,6 +83,6 @@ export function GitroomBox() {
       >
         {isMd ? <MobileVersion /> : <DesktopVersion />}
       </div>
-    </motion.section>
+    </section>
   );
 }

@@ -12,9 +12,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: WithChildren) {
   return (
     <html lang="en" suppressHydrationWarning={true} className="scroll-smooth">
-      <body
-        className={`${generalSans.className} dark overflow-x-hidden w-full max-w-screen min-h-svh`}
-      >
+      <body className={`${generalSans.className} dark overflow-x-hidden w-full max-w-screen min-h-svh`}>
         {children}
       </body>
     </html>

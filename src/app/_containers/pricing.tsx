@@ -12,79 +12,39 @@ const pricingDescriptionClassName = 'text-[24px] text-[#D3D3D3] leading-[150%]';
 
 export function Card() {
   return (
-    <motion.div
+    <div
       className="overflow-hidden p-[1px] min-h-[488px] rounded-[27px] w-full max-w-[523px] shadow-inset-lg z-10 relative"
-      whileInView={{
-        scale: [0.65, 1],
-        opacity: [0.65, 1],
-      }}
       style={{
-        background:
-          'linear-gradient(90deg, rgba(101,101,101,1) 0%, rgba(176,144,187,1) 41%, rgba(126,59,191,1) 100%)',
+        background: 'linear-gradient(90deg, rgba(101,101,101,1) 0%, rgba(176,144,187,1) 41%, rgba(126,59,191,1) 100%)',
       }}
     >
       <div className="p-8 h-full w-full rounded-[27px] bg-[#13131A] shadow-inset-lg z-10 relative">
         <header className="w-full flex flex-col items-start gap-2 pb-[24px] border-b mb-6">
-          <h2 className="text-white text-[32px] font-medium">
-            Explosive Growth
-          </h2>
+          <h2 className="text-white text-[32px] font-medium">Explosive Growth</h2>
           <p className="text-[#D3D3D3] text-sm">
-            Perfect for your next content, leave to us <br /> and enjoy the
-            result!
+            Perfect for your next content, leave to us <br /> and enjoy the result!
           </p>
         </header>
         <div className="w-full mb-14">
           <div className="flex items-center justify-start gap-2.5 mb-2">
-            <Image
-              className="select-none"
-              src="/pricing/check-circle.png"
-              alt="check item"
-              width={32}
-              height={32}
-            />
+            <Image className="select-none" src="/pricing/check-circle.png" alt="check item" width={32} height={32} />
             <p className={pricingDescriptionClassName}>10 Launch Weeks</p>
           </div>
           <div className="flex items-center justify-start gap-2.5 mb-2">
-            <Image
-              className="select-none"
-              src="/pricing/check-circle.png"
-              alt="check item"
-              width={32}
-              height={32}
-            />
+            <Image className="select-none" src="/pricing/check-circle.png" alt="check item" width={32} height={32} />
             <p className={pricingDescriptionClassName}>10 Influencers Posts</p>
           </div>
           <div className="flex items-center justify-start gap-2.5 mb-2">
-            <Image
-              className="select-none"
-              src="/pricing/check-circle.png"
-              alt="check item"
-              width={32}
-              height={32}
-            />
+            <Image className="select-none" src="/pricing/check-circle.png" alt="check item" width={32} height={32} />
             <p className={pricingDescriptionClassName}>100,000 views</p>
           </div>
           <div className="flex items-center justify-start gap-2.5 mb-2">
-            <Image
-              className="select-none"
-              src="/pricing/check-circle.png"
-              alt="check item"
-              width={32}
-              height={32}
-            />
+            <Image className="select-none" src="/pricing/check-circle.png" alt="check item" width={32} height={32} />
             <p className={pricingDescriptionClassName}>10 Reddit Posts</p>
           </div>
           <div className="flex items-center justify-start gap-2.5">
-            <Image
-              className="select-none"
-              src="/pricing/check-circle.png"
-              alt="check item"
-              width={32}
-              height={32}
-            />
-            <p className={pricingDescriptionClassName}>
-              2 Hours Marketing Consultation
-            </p>
+            <Image className="select-none" src="/pricing/check-circle.png" alt="check item" width={32} height={32} />
+            <p className={pricingDescriptionClassName}>2 Hours Marketing Consultation</p>
           </div>
         </div>
         <GradientButton className="w-full h-[58px]" />
@@ -94,26 +54,22 @@ export function Card() {
           className="absolute bottom-0 left-0 w-full -z-10 rounded-b-2xl"
         />
       </div>
-    </motion.div>
+    </div>
   );
 }
 
 export function Pricing() {
   return (
-    <motion.section
+    <section
       className="section flex flex-col items-center gap-10 z-10 bg-scroll relative overflow-x-hidden"
       id="pricing"
-      whileInView={{ translateY: [100, 0], opacity: [0, 1] }}
     >
       <header className="w-full flex items-center gap-4 justify-center">
         <div className="flex flex-col gap-4 items-center">
           <SectionDescription text="pricing" />
-          <SectionTitle className="max-md:text-center">
-            The Startup Package
-          </SectionTitle>
+          <SectionTitle className="max-md:text-center">The Startup Package</SectionTitle>
           <p className="text-[#D3D3D3] text-center text-[18px] leading-[150%]">
-            Should you be unsatisfied with the initial article, we are committed
-            to <br /> offering a full refund.
+            Should you be unsatisfied with the initial article, we are committed to <br /> offering a full refund.
           </p>
         </div>
       </header>
@@ -144,6 +100,6 @@ export function Pricing() {
           />
         </div>
       </div>
-    </motion.section>
+    </section>
   );
 }

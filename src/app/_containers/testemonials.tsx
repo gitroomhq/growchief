@@ -3,13 +3,7 @@
 
 import { motion } from 'framer-motion';
 
-import {
-  CarouselPrevious,
-  Carousel,
-  CarouselItem,
-  CarouselContent,
-  CarouselNext,
-} from '@/components/ui/carousel';
+import { CarouselPrevious, Carousel, CarouselItem, CarouselContent, CarouselNext } from '@/components/ui/carousel';
 import { testemonials } from '@/data/testemonials.data';
 import { Testemonial } from '@/components/layout/testemonial';
 import { SectionTitle } from '@/components/layout/section-title';
@@ -18,10 +12,7 @@ import { Overlay } from '@/components/layout/overlay';
 
 export function Testemonials() {
   return (
-    <motion.section
-      className="section overflow-x-hidden flex flex-col justify-between items-center gap-10 z-10 bg-scroll relative"
-      whileInView={{ translateY: [100, 0], opacity: [0.25, 1] }}
-    >
+    <section className="section overflow-x-hidden flex flex-col justify-between items-center gap-10 z-10 bg-scroll relative">
       <div className="py-[64px] flex flex-col gap-[86px] items-center w-full">
         <header className="flex justify-center items-center gap-8 w-full">
           <img
@@ -60,6 +51,6 @@ export function Testemonials() {
           </div>
         </Carousel>
       </div>
-    </motion.section>
+    </section>
   );
 }
