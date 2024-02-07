@@ -55,7 +55,7 @@ export function HeroSection() {
             <div className="flex relative w-[500px] h-[450px] max-md:hidden">
               <Spline
                 scene="/spline/growchief.spline"
-                className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 !w-[200%] !h-[200%] scale-[140%] pointer-events-none"
+                className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 !w-[100%] !h-[100%] scale-[135%]"
               />
             </div>
           </div>
