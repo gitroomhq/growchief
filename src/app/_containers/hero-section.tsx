@@ -1,6 +1,7 @@
 'use client';
 
 /* eslint-disable @next/next/no-img-element */
+import { Suspense } from 'react';
 import Spline from '@splinetool/react-spline';
 import Image from 'next/image';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -51,21 +52,24 @@ export function HeroSection() {
                 </Button>
               </div>
             </div>
-            <div className="flex relative w-[500px] h-[450px]">
+            <div className="flex relative w-[500px] h-[450px] max-md:hidden">
               <Spline
                 scene="/spline/growchief.spline"
-                className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 !w-[150%] !h-[150%] scale-[120%]"
+                className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 !w-[200%] !h-[200%] scale-[140%] pointer-events-none"
               />
             </div>
           </div>
-          <div className="flex flex-col items-center justify-center gap-8 max-w-[1162px] mt-10">
+          <div className="flex flex-col items-center justify-center gap-8 w-full mt-10">
             <span className="text-center text-[20px] text-[#C5C5C5] font-[500]">Trusted by</span>
             <div className="z-50 flex items-center justify-center w-full">
               <Swiper
                 slidesPerView={1}
                 breakpoints={{
-                  640: {
+                  400: {
                     slidesPerView: 2,
+                  },
+                  640: {
+                    slidesPerView: 3,
                   },
                   768: {
                     slidesPerView: 4,
@@ -76,14 +80,8 @@ export function HeroSection() {
                 }}
               >
                 {trusts.map((imgURL: string, index: number) => (
-                  <SwiperSlide key={index} className="flex items-center">
-                    <Image
-                      src={imgURL}
-                      alt={'Trusted by' + index}
-                      width={180}
-                      height={0}
-                      className="object-cover !h-full"
-                    />
+                  <SwiperSlide key={index} className="flex items-center justify-center">
+                    <Image src={imgURL} alt={'Trusted by' + index} width={180} height={50} className="" />
                   </SwiperSlide>
                 ))}
               </Swiper>
