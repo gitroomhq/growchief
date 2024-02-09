@@ -8,7 +8,7 @@ import { testemonials } from '@/data/testemonials.data';
 import { Testemonial } from '@/components/layout/testemonial';
 import { SectionTitle } from '@/components/layout/section-title';
 import { SectionDescription } from '@/components/layout/section-description';
-import { Overlay } from '@/components/layout/overlay';
+// import { Overlay } from '@/components/layout/overlay';
 
 export function Testemonials() {
   return (
@@ -34,16 +34,17 @@ export function Testemonials() {
         </header>
         <Carousel className="flex flex-col w-full flex-[1] relative max-w-[1290px] mx-auto">
           {/* <Overlay className="-left-2" /> */}
-          <CarouselContent className="w-full flex-[1] relative">
+          <CarouselContent className="w-full flex-[1] relative ml-0">
             {testemonials.map((testemonial, index) => (
               <CarouselItem
                 key={index}
-                className="basis-[500px] border-none outline-none p-0 m-0 ml-[30px] max-md:basis-[230px] max-md:ml-[55px]"
+                className="basis-[500px] border-none outline-none p-0 m-0 ml-[50px] max-sm:basis-[100%] max-sm:ml-[16px]"
               >
                 <Testemonial {...testemonial} />
               </CarouselItem>
             ))}
           </CarouselContent>
+
           {/* <Overlay className="-right-2" /> */}
           <div className="flex items-center gap-3 min-h-[47px] justify-center relative pt-[64px]">
             <CarouselPrevious className="relative inset-auto w-[47px] h-[47px]" />

@@ -18,7 +18,7 @@ export function Card() {
         background: 'linear-gradient(90deg, rgba(101,101,101,1) 0%, rgba(176,144,187,1) 41%, rgba(126,59,191,1) 100%)',
       }}
     >
-      <div className="p-8 h-full w-full rounded-[27px] bg-[#13131A] shadow-inset-lg z-10 relative">
+      <div className="p-[1.5rem] sm:p-8 h-full w-full rounded-[27px] bg-[#13131A] shadow-inset-lg z-10 relative">
         <header className="w-full flex flex-col items-start gap-2 pb-[24px] border-b mb-6">
           <h2 className="text-white text-[32px] font-medium">Explosive Growth</h2>
           <p className="text-[#D3D3D3] text-sm">
@@ -66,7 +66,7 @@ export function Pricing() {
     >
       <header className="w-full flex items-center gap-4 justify-center">
         <div className="flex flex-col gap-4 items-center">
-          <SectionDescription text="pricing" />
+          <SectionDescription text="pricing" className="" />
           <SectionTitle className="max-md:text-center">The Startup Package</SectionTitle>
           <p className="text-[#D3D3D3] text-center text-[18px] leading-[150%]">
             Should you be unsatisfied with the initial article, we are committed to <br /> offering a full refund.

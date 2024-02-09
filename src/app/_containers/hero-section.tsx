@@ -1,8 +1,7 @@
 'use client';
 
 /* eslint-disable @next/next/no-img-element */
-import { Suspense } from 'react';
-import Spline from '@splinetool/react-spline';
+import Spline, { SplineEvent } from '@splinetool/react-spline';
 import Image from 'next/image';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -12,6 +11,10 @@ import { Navbar } from '@/components/layout/navbar';
 import { trusts } from '@/data/trust.data';
 
 export function HeroSection() {
+  const handleWheel = (event: any) => {
+    console.log(event);
+  };
+
   return (
     <div
       className="w-full relative"
@@ -55,7 +58,8 @@ export function HeroSection() {
             <div className="flex relative w-[500px] h-[450px] max-md:hidden">
               <Spline
                 scene="/spline/growchief.spline"
-                className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 !w-[100%] !h-[100%] scale-[135%]"
+                className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 !w-[300%] !h-[300%] scale-[120%]"
+                onWheel={(e: SplineEvent) => handleWheel(e)}
               />
             </div>
           </div>
@@ -63,12 +67,11 @@ export function HeroSection() {
             <span className="text-center text-[20px] text-[#C5C5C5] font-[500]">Trusted by</span>
             <div className="z-50 flex items-center justify-center w-full">
               <Swiper
-                slidesPerView={1}
+                slidesPerView={3}
+                spaceBetween={30}
+                freeMode={true}
                 breakpoints={{
-                  400: {
-                    slidesPerView: 2,
-                  },
-                  640: {
+                  500: {
                     slidesPerView: 3,
                   },
                   768: {
@@ -80,8 +83,8 @@ export function HeroSection() {
                 }}
               >
                 {trusts.map((imgURL: string, index: number) => (
-                  <SwiperSlide key={index} className="flex items-center justify-center">
-                    <Image src={imgURL} alt={'Trusted by' + index} width={180} height={50} className="" />
+                  <SwiperSlide key={index} className="flex items-center justify-center w-[300px]">
+                    <Image src={imgURL} alt={'Trusted by' + index} width={180} height={50} />
                   </SwiperSlide>
                 ))}
               </Swiper>

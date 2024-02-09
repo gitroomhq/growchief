@@ -4,7 +4,7 @@ import { IoLogoDiscord, IoLogoTwitter, IoLogoLinkedin } from 'react-icons/io5';
 export function Footer() {
   return (
     <footer className="w-full flex justify-center items-center py-[49px] px-3 relative overflow-hidden">
-      <div className="w-full max-w-[1286px] flex flex-col md:flex-row justify-between items-start z-20">
+      <div className="w-full max-w-[1286px] flex flex-col sm:flex-row justify-between items-start z-20">
         <div className="flex mb-8 md:mb-0 flex-row gap-16 md:items-center">
           <div className="flex flex-col">
             <h3 className="text-white text-[20px] mb-6">Page</h3>

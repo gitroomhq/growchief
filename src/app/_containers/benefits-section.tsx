@@ -18,7 +18,7 @@ export function BenefitsSection() {
     <section className="section flex flex-col justify-between items-center gap-14 z-10 bg-scroll relative">
       <header className="w-full max-w-[1226px] flex items-center justify-start gap-4">
         <div className="flex flex-col gap-3 items-start max-md:items-center">
-          <SectionDescription text="THE BENEFIT" />
+          <SectionDescription text="THE BENEFIT" className="!text-left w-full" />
           <SectionTitle className="text-left">
             Crafting quality <br /> you’ll remember
           </SectionTitle>

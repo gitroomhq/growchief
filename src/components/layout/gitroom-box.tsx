@@ -61,7 +61,7 @@ const MobileVersion = () => (
       <Image
         src="/git-room-bg-small.png"
         alt="git-room-bg-small.png"
-        className="object-cover min-h-[502px] flex-grow"
+        className="object-fill min-h-[502px] flex-grow"
         width={932}
         height={502}
       />
