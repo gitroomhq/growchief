@@ -17,7 +17,7 @@ export function HeroSection() {
 
   return (
     <div
-      className="w-full relative"
+      className="w-full relative bg-no-repeat bg-cover"
       style={{
         backgroundImage: 'url(/grid-bg.svg)',
       }}
@@ -58,7 +58,7 @@ export function HeroSection() {
             <div className="flex relative w-[500px] h-[450px] max-md:hidden">
               <Spline
                 scene="/spline/growchief.spline"
-                className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 !w-[300%] !h-[300%] scale-[120%]"
+                className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 !w-[300%] !h-[300%] scale-[140%]"
                 onWheel={(e: SplineEvent) => handleWheel(e)}
               />
             </div>

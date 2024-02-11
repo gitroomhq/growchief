@@ -8,7 +8,7 @@ export function Footer() {
         <div className="flex mb-8 md:mb-0 flex-row gap-16 md:items-center">
           <div className="flex flex-col">
             <h3 className="text-white text-[20px] mb-6">Page</h3>
-            <Link href="#" className="text-[#A4ACB9] mb-2 text-[16px]">
+            <Link href="#" className="text-[#A4ACB9] mb-2 text-[16px] ">
               Home
             </Link>
             <Link href="#" className="text-[#A4ACB9] mb-2 text-[16px]">

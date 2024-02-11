@@ -49,7 +49,7 @@ export function ProcessSection() {
               </h2>
               <p className="text-[#D3D3D3] leading-[150%] text-[18px]">{processItem.description}</p>
             </div>
-            <div className="w-full max-w-[420px] grid place-items-center relative h-full min-h-[324px]">
+            <div className="w-full max-w-[420px] grid place-items-center h-full min-h-[324px] relative">
               <Image
                 src={processItem.imageUrl}
                 alt={processItem.title}
@@ -67,7 +67,7 @@ export function ProcessSection() {
                   'left-16': processItem.title === 'Topic Selection and Article Preparation',
                 })}
               />
-              <div className="absolute inset-0 z-10 select-none bg-[#6C33C9] h-full rounded-full blur-[10rem] opacity-80" />
+              <div className="absolute inset-0 z-10 select-none bg-[#6C33C9] h-full rounded-full blur-[7rem] opacity-30" />
             </div>
           </div>
         ))}

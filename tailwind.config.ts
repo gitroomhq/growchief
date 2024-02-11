@@ -69,6 +69,7 @@ const config = {
       },
       backgroundImage: {
         maskGradient: 'radial-gradient(ellipse 50% 50% at 50% 50%, #6c33c9ad 0%, transparent 100%)',
+        circleGradient: 'radial-gradient(circle 50% 50% at 50% 50%, #6c33c9ad 0%, transparent 100%)',
       },
     },
   },

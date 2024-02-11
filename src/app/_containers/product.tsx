@@ -9,14 +9,14 @@ import { SectionTitle } from '@/components/layout/section-title';
 export function Product() {
   return (
     <section className="section w-full grid place-items-center z-10" id="product">
-      <img
+      {/* <img
         src="/product-left-blur.svg"
         alt="product-left-blur"
         className="absolute -top-28 max-md:hidden right-0 -z-10 blur-sm"
-      />
-      <div className="absolute -left-[32%] -z-10 -top-28 max-md:hidden bg-maskGradient w-[800px] h-[700px]"></div>
-      {/* <img src="/about-glow.png" alt="Glow" className="" /> */}
-      <div className="absolute top-1/4 right-0 bg-[#6C33C9] -z-10 h-[12.25rem] w-1/4 rounded-full blur-[10rem] select-none" />
+      /> */}
+      <div className="absolute -left-[360px] -z-10 -top-14 max-md:-left-[200px] max-md:-top-16 max-md:w-[500px] max-md:h-[400px] bg-maskGradient w-[600px] h-[500px]"></div>
+      <img src="/grow.svg" alt="" className="absolute left-0 -z-10 top-[60px] md:top-[10%]" />
+      <div className="absolute top-32 right-0 bg-[#6C33C9] -z-10 h-[12rem] w-[12rem] rounded-full blur-[8rem] select-none max-md:hidden" />
       <div className="flex flex-col justify-start w-full max-w-[1050px] gap-[118px]">
         <header className="flex flex-col gap-3 items-start w-full relative">
           <SectionDescription text="WHAT’S GROWCHIEF" className="" />
