@@ -20,7 +20,7 @@ export function ProcessSection() {
           loading="lazy"
         />
         <div className="flex flex-col gap-3 items-center min-w-[435px] max-md:min-w-full">
-          <SectionDescription text="OUR PROCESS" />
+          <SectionDescription text="OUR PROCESS" className="" />
           <SectionTitle className="text-center">How We Work</SectionTitle>
         </div>
         <img

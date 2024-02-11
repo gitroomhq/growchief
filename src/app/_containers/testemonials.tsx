@@ -21,7 +21,7 @@ export function Testemonials() {
             className="flex-[1] max-md:hidden"
           />
           <div className="flex gap-3 flex-col items-center">
-            <SectionDescription text="TESTIMONIALS" />
+            <SectionDescription text="TESTIMONIALS" className="" />
             <SectionTitle className="text-center min-w-[333px] max-md:min-w-fit">
               What our <br /> clients say
             </SectionTitle>

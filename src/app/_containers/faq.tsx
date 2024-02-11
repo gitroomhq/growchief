@@ -11,7 +11,7 @@ export function Faq() {
   return (
     <section className="section flex flex-col items-center gap-10 z-10 bg-scroll relative">
       <header className="w-full gap-4 flex flex-col justify-center items-center">
-        <SectionDescription text="faq" />
+        <SectionDescription text="faq" className="" />
         <SectionTitle className="max-md:text-center">Frequently Asked Questions</SectionTitle>
         <p className="text-[#D3D3D3] text-center max-w-[373px] leading-[150%] font-normal text-[18px]">
           Still unsure? Find the answers you’re looking for here in our laatest FAQ

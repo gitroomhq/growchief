@@ -17,7 +17,7 @@ import 'swiper/css';
 export default function Home() {
   return (
     <main className="relative min-h-svh w-full bg-black py-[34px] z-10 overflow-hidden">
-      {/* <div className="absolute -top- left-1/2 -translate-x-1/2 max-md:hidden -z-[1] bg-maskGradient w-[1200px] h-[600px]"></div> */}
+      <div className="absolute -top-64 left-1/2 -translate-x-1/2 max-md:hidden -z-[1] bg-maskGradient w-[1200px] h-[600px]"></div>
       <HeroSection />
       <Product />
       <Testemonials />

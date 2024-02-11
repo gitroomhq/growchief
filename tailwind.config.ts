@@ -68,7 +68,7 @@ const config = {
         'accordion-up': 'accordion-up 0.2s ease-out',
       },
       backgroundImage: {
-        maskGradient: 'radial-gradient(ellipse 50% 50% at 50% 50%, #6c33c9c7 0%, transparent 100%)',
+        maskGradient: 'radial-gradient(ellipse 50% 50% at 50% 50%, #6c33c9ad 0%, transparent 100%)',
       },
     },
   },

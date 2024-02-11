@@ -14,11 +14,12 @@ export function Product() {
         alt="product-left-blur"
         className="absolute -top-28 max-md:hidden right-0 -z-10 blur-sm"
       />
-      <img src="/about-glow.png" alt="Glow" className="absolute left-0 -z-10 -top-28" />
+      <div className="absolute -left-[32%] -z-10 -top-28 max-md:hidden bg-maskGradient w-[800px] h-[700px]"></div>
+      {/* <img src="/about-glow.png" alt="Glow" className="" /> */}
       <div className="absolute top-1/4 right-0 bg-[#6C33C9] -z-10 h-[12.25rem] w-1/4 rounded-full blur-[10rem] select-none" />
       <div className="flex flex-col justify-start w-full max-w-[1050px] gap-[118px]">
         <header className="flex flex-col gap-3 items-start w-full relative">
-          <SectionDescription text="WHAT’S GROWCHIEF" />
+          <SectionDescription text="WHAT’S GROWCHIEF" className="" />
           <SectionTitle>
             We specialize in human-centered design where technology serves humanity, not the other way around.
           </SectionTitle>
