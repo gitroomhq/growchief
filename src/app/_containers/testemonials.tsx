@@ -18,7 +18,7 @@ export function Testemonials() {
           <div
             className="flex-1 max-md:hidden h-[82px]"
             style={{
-              background: '#111 -webkit-linear-gradient(left, #000000, #6C33C9) no-repeat 0 0 / 82px',
+              background: '#111 -webkit-linear-gradient(left, #111, #6C33C9) no-repeat 0 0 / 82px',
               mask: `url("/mask-left.svg")`,
               maskSize: 'fill',
               maskRepeat: 'no-repeat',
@@ -35,7 +35,7 @@ export function Testemonials() {
           <div
             className="flex-1 max-md:hidden h-[82px]"
             style={{
-              background: '#111 -webkit-linear-gradient(right, #000000, #6C33C9) no-repeat 0 0 / 82px',
+              background: '#111 -webkit-linear-gradient(right, #111, #6C33C9) no-repeat 0 0 / 82px',
               mask: `url("/mask-right.svg")`,
               maskSize: 'fill',
               maskRepeat: 'no-repeat',
