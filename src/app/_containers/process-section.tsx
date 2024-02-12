@@ -13,22 +13,32 @@ export function ProcessSection() {
   return (
     <section className="section flex flex-col justify-between items-center gap-16 z-10 bg-scroll relative max-sm:gap-8">
       <header className="w-full flex items-center gap-[6px]">
-        <img
-          src="/testimonial-separator-left.png"
-          alt="separator"
-          className="transform -scale-y-100 flex-[1] max-md:hidden"
-          loading="lazy"
-        />
+        <div
+          className="flex-1 max-md:hidden h-[82px]"
+          style={{
+            background: '#111 -webkit-linear-gradient(left, #000000, #6C33C9) no-repeat 0 0 / 82px',
+            mask: `url("/mask-right.svg")`,
+            maskSize: 'fill',
+            maskPosition: 'right',
+            maskRepeat: 'no-repeat',
+            animation: 'sweepLeft 4.5s ease-in infinite',
+          }}
+        ></div>
         <div className="flex flex-col gap-3 items-center min-w-[435px] max-md:min-w-full">
           <SectionDescription text="OUR PROCESS" className="" />
           <SectionTitle className="text-center">How We Work</SectionTitle>
         </div>
-        <img
-          src="/testimonial-separator-right.png"
-          alt="separator"
-          className="transform -scale-y-100 flex-[1] max-md:hidden"
-          loading="lazy"
-        />
+        <div
+          className="flex-1 max-md:hidden h-[82px]"
+          style={{
+            background: '#111 -webkit-linear-gradient(right, #000000, #6C33C9) no-repeat 0 0 / 82px',
+            mask: `url("/mask-left.svg")`,
+            maskSize: 'fill',
+            maskPosition: 'left',
+            maskRepeat: 'no-repeat',
+            animation: 'sweepRight 4.5s ease-in infinite',
+          }}
+        ></div>
       </header>
       <div className="w-full pt-16 flex flex-col gap-[179px] items-center relative min-h-[1264px] max-w-[1135px] mx-auto px-[38px] max-md:px-0 max-md:gap-10">
         <Image

@@ -122,3 +122,23 @@ img {
     -webkit-text-fill-color: transparent;
   }
 }
+
+@keyframes sweepLeft {
+  0% {
+    background-position: -50% 0;
+  }
+
+  100% {
+    background-position: 110% 0;
+  }
+}
+
+@keyframes sweepRight {
+  0% {
+    background-position: 150% 0;
+  }
+
+  100% {
+    background-position: -10% 0;
+  }
+}

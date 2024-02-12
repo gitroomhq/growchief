@@ -15,22 +15,33 @@ export function Testemonials() {
     <section className="section overflow-x-hidden flex flex-col justify-between items-center gap-10 z-10 bg-scroll relative">
       <div className="py-[64px] flex flex-col gap-[86px] items-center w-full">
         <header className="flex justify-center items-center gap-8 w-full">
-          <img
-            src="/testimonial-separator-left.png"
-            alt="testimonial-separator-left"
-            className="flex-[1] max-md:hidden"
-          />
+          <div
+            className="flex-1 max-md:hidden h-[82px]"
+            style={{
+              background: '#111 -webkit-linear-gradient(left, #000000, #6C33C9) no-repeat 0 0 / 82px',
+              mask: `url("/mask-left.svg")`,
+              maskSize: 'fill',
+              maskRepeat: 'no-repeat',
+              maskPosition: 'right',
+              animation: 'sweepLeft 4.5s ease-in infinite',
+            }}
+          ></div>
           <div className="flex gap-3 flex-col items-center">
             <SectionDescription text="TESTIMONIALS" className="" />
             <SectionTitle className="text-center min-w-[333px] max-md:min-w-fit">
               What our <br /> clients say
             </SectionTitle>
           </div>
-          <img
-            src="/testimonial-separator-right.png"
-            alt="testimonial-separator-right"
-            className="flex-[1] max-md:hidden"
-          />
+          <div
+            className="flex-1 max-md:hidden h-[82px]"
+            style={{
+              background: '#111 -webkit-linear-gradient(right, #000000, #6C33C9) no-repeat 0 0 / 82px',
+              mask: `url("/mask-right.svg")`,
+              maskSize: 'fill',
+              maskRepeat: 'no-repeat',
+              animation: 'sweepRight 4.5s ease-in infinite',
+            }}
+          ></div>
         </header>
         <Carousel className="flex flex-col w-full flex-[1] relative max-w-[1290px] mx-auto">
           {/* <Overlay className="-left-2" /> */}

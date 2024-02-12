@@ -23,12 +23,16 @@ export function BenefitsSection() {
             Crafting quality <br /> you’ll remember
           </SectionTitle>
         </div>
-        <img
-          src="/testimonial-separator-right.png"
-          alt="separator"
-          className="rotate-180 flex-[1] max-md:hidden translate-y-14"
-          loading="lazy"
-        />
+        <div
+          className="flex-1 max-md:hidden h-[82px] translate-y-10"
+          style={{
+            background: '#111 -webkit-linear-gradient(left, #000000, #6C33C9) no-repeat 0 0 / 82px',
+            mask: `url("/mask-right.svg")`,
+            maskSize: 'fill',
+            maskRepeat: 'no-repeat',
+            animation: 'sweepLeft 3.5s ease-in infinite',
+          }}
+        ></div>
       </header>
       <div className="flex flex-col items-center w-full gap-6">
         <div className="flex items-center gap-7 max-md:flex-col">

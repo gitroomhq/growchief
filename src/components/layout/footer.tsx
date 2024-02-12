@@ -8,25 +8,43 @@ export function Footer() {
         <div className="flex mb-8 md:mb-0 flex-row gap-16 md:items-center">
           <div className="flex flex-col">
             <h3 className="text-white text-[20px] mb-6">Page</h3>
-            <Link href="#" className="text-[#A4ACB9] mb-2 text-[16px] ">
+            <Link
+              href="#"
+              className="text-[#A4ACB9] mb-2 text-[16px] transition-all hover:translate-x-3 hover:text-[#6C33C9] duration-500"
+            >
               Home
             </Link>
-            <Link href="#" className="text-[#A4ACB9] mb-2 text-[16px]">
+            <Link
+              href="#"
+              className="text-[#A4ACB9] mb-2 text-[16px] transition-all hover:translate-x-3 hover:text-[#6C33C9] duration-500"
+            >
               Pricing
             </Link>
-            <Link href="#" className="text-[#A4ACB9] text-[16px]">
+            <Link
+              href="#"
+              className="text-[#A4ACB9] text-[16px] transition-all hover:translate-x-3 hover:text-[#6C33C9] duration-500"
+            >
               Blog
             </Link>
           </div>
           <div className="flex flex-col">
             <h3 className="text-white text-[20px] mb-6">Resources</h3>
-            <Link href="#" className="text-[#A4ACB9] mb-2 text-[16px]">
+            <Link
+              href="#"
+              className="text-[#A4ACB9] mb-2 text-[16px] transition-all hover:translate-x-3 hover:text-[#6C33C9] duration-500"
+            >
               Book a Call
             </Link>
-            <Link href="#" className="text-[#A4ACB9] mb-2 text-[16px]">
+            <Link
+              href="#"
+              className="text-[#A4ACB9] mb-2 text-[16px] transition-all hover:translate-x-3 hover:text-[#6C33C9] duration-500"
+            >
               Term of Use
             </Link>
-            <Link href="#" className="text-[#A4ACB9] text-[16px]">
+            <Link
+              href="#"
+              className="text-[#A4ACB9] text-[16px] transition-all hover:translate-x-3 hover:text-[#6C33C9] duration-500"
+            >
               Privacy Policy
             </Link>
           </div>
