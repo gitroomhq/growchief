@@ -1,7 +1,15 @@
 import { useRef } from 'react';
 
+const Dot = () => {
+  return <div>123</div>;
+};
+
 function Dots() {
-  return <div className="dot_grid"></div>;
+  return (
+    <div>
+      <Dot />
+    </div>
+  );
 }
 
 export default Dots;

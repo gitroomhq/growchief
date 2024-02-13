@@ -9,7 +9,7 @@ import { SectionTitle } from '@/components/layout/section-title';
 
 export function Faq() {
   return (
-    <section className="section flex flex-col items-center gap-10 z-10 bg-scroll relative">
+    <section className="section flex flex-col items-center gap-10 z-10 bg-scroll relative mt-20">
       <header className="w-full gap-4 flex flex-col justify-center items-center">
         <SectionDescription text="faq" className="" />
         <SectionTitle className="max-md:text-center">Frequently Asked Questions</SectionTitle>

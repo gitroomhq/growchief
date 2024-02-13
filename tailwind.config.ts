@@ -62,6 +62,14 @@ const config = {
           from: { height: 'var(--radix-accordion-content-height)' },
           to: { height: '0' },
         },
+        'dot-color1': {
+          from: { backgroundColor: '#6C33C9' },
+          to: { backgroundColor: '' },
+        },
+        'dot-color2': {
+          from: { backgroundColor: '' },
+          to: { backgroundColor: '' },
+        },
       },
       animation: {
         'accordion-down': 'accordion-down 0.2s ease-out',

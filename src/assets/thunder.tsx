@@ -6,7 +6,7 @@ export function Thunder() {
       viewBox="0 0 207 207"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      className="max-w-[190px]"
+      className="w-[40%] h-[50%] mb-[1rem] sm:w-[180px] sm:h-[210px] sm:mb-0"
     >
       <g filter="url(#filter0_di_407_363)">
         <rect
@@ -53,29 +53,12 @@ export function Thunder() {
             values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
             result="hardAlpha"
           />
-          <feMorphology
-            radius="2"
-            operator="dilate"
-            in="SourceAlpha"
-            result="effect1_dropShadow_407_363"
-          />
+          <feMorphology radius="2" operator="dilate" in="SourceAlpha" result="effect1_dropShadow_407_363" />
           <feOffset />
           <feComposite in2="hardAlpha" operator="out" />
-          <feColorMatrix
-            type="matrix"
-            values="0 0 0 0 0.481725 0 0 0 0 0.0745092 0 0 0 0 1 0 0 0 0.55 0"
-          />
-          <feBlend
-            mode="normal"
-            in2="BackgroundImageFix"
-            result="effect1_dropShadow_407_363"
-          />
-          <feBlend
-            mode="normal"
-            in="SourceGraphic"
-            in2="effect1_dropShadow_407_363"
-            result="shape"
-          />
+          <feColorMatrix type="matrix" values="0 0 0 0 0.481725 0 0 0 0 0.0745092 0 0 0 0 1 0 0 0 0.55 0" />
+          <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_407_363" />
+          <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_407_363" result="shape" />
           <feColorMatrix
             in="SourceAlpha"
             type="matrix"
@@ -85,15 +68,8 @@ export function Thunder() {
           <feOffset dy="1" />
           <feGaussianBlur stdDeviation="2.5" />
           <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
-          <feColorMatrix
-            type="matrix"
-            values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.25 0"
-          />
-          <feBlend
-            mode="normal"
-            in2="shape"
-            result="effect2_innerShadow_407_363"
-          />
+          <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.25 0" />
+          <feBlend mode="normal" in2="shape" result="effect2_innerShadow_407_363" />
         </filter>
         <linearGradient
           id="paint0_linear_407_363"

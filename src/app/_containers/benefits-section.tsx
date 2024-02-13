@@ -40,7 +40,7 @@ export function BenefitsSection() {
             title="Instant Impact"
             description="From strategizing your optimal UX, to building a flexible back-end that syncs with your internal ops, our goal is beautifully fluid and flawlessly functional websites that solve the right problems—and look really good while they do it."
           >
-            <div className="absolute bottom-10 left-1/2 -translate-x-1/2 bg-[#6C33C9] -z-10 h-[8rem] w-1/2 rounded-full blur-[10rem] select-none" />
+            <div className="absolute bottom-10 left-1/2 -translate-x-1/2 bg-[#6C33C9] z-0 h-[8rem] w-1/2 rounded-full blur-[6.5rem] select-none" />
             <div className="absolute left-[62px] max-md:-left-8">
               <img src="/benefits/vertical-line.svg" alt="vertical-line" />
             </div>
@@ -50,8 +50,14 @@ export function BenefitsSection() {
             <div className="absolute left-[195px] max-md:hidden">
               <img src="/benefits/vertical-line.svg" alt="vertical-line" />
             </div>
-            <div className="absolute bottom-18 left-0 w-full flex justify-center">
-              <Image src="/benefits/dots.png" alt="dots" width={220} height={320} />
+            <div
+              className="absolute bottom-0 left-0 w-full flex justify-center"
+              style={{
+                maskImage: 'radial-gradient(ellipse 50% 50% at 50% 50%, black 50%, transparent 50%)',
+                WebkitMaskImage: 'radial-gradient(ellipse 50% 50% at 50% 50%, black 60%, transparent 40%)',
+              }}
+            >
+              <Image src="/benefits/dots.png" alt="dots" width={220} height={320} className="max-sm:w-[50%]" />
             </div>
             <div className="absolute bottom-0 left-0 w-full flex justify-center items-center z-10">
               <Thunder />
@@ -65,7 +71,7 @@ export function BenefitsSection() {
             <div className="absolute right-[63px] max-md:right-3">
               <img src="/benefits/vertical-line.svg" alt="vertical-line" />
             </div>
-            <div className="absolute bottom-0 left-0 w-full min-h-[104px]">
+            <div className="absolute bottom-0 left-0 w-full">
               <Image
                 src="/benefits/instant-impact-vertical-lines-bg.svg"
                 alt="instant-impact-vertical-lines-bg"
@@ -80,9 +86,9 @@ export function BenefitsSection() {
             description="From strategizing your optimal UX, to building a flexible back-end that syncs with your internal ops, our goal is beautifully fluid"
             width="small"
           >
-            <div className="absolute bottom-0 right-0 -translate-x-1/2 bg-[#6C33C9] -z-10 h-[15.25rem] w-[15rem] rounded-full blur-[10rem] select-none" />
-            <img src="/benefits/bottom-lines.png" alt="lines" className="absolute max-w-[192px] right-0" />
-            <div className="absolute bottom-[12.194px]">
+            <div className="absolute bottom-0 right-0 bg-[#6C33C9] z-0 h-[9rem] w-[9rem] rounded-full blur-[7rem] select-none" />
+            <img src="/benefits/bottom-lines.png" alt="lines" className="absolute w-full h-full right-0" />
+            <div className="absolute max-md:flex max-md:justify-center bottom-[40px] left-1/2 -translate-x-1/2 w-[90%]">
               <Image src="/benefits/Aa-bg.png" alt="aa-bg" width={328} height={265} />
             </div>
           </Benefit>
@@ -93,7 +99,7 @@ export function BenefitsSection() {
             description="From strategizing your optimal UX, to building a flexible back-end that syncs with your internal ops, our goal is beautifully fluid"
             width="small"
           >
-            <div className="absolute bottom-0 left-0 bg-[#6C33C9] -z-10 h-[18rem] w-1/2 rounded-full blur-[10rem] select-none" />
+            <div className="absolute bottom-0 left-0 bg-[#6C33C9] z-0 h-[7rem] w-1/2 rounded-full blur-[7rem] select-none" />
             <img
               src="/benefits/three-cards.png"
               alt="Three Cards"
@@ -108,11 +114,11 @@ export function BenefitsSection() {
             title="Stay on Developers Mind"
             description="From strategizing your optimal UX, to building a flexible back-end that syncs with your internal ops, our goal is beautifully fluid and flawlessly functional websites that solve the right problems—and look really good while they do it."
           >
-            <div className="absolute bottom-0 left-1/2 -translate-x-1/2 bg-[#6C33C9] -z-10 h-[5rem] w-1/2 rounded-full blur-[10rem] select-none" />
+            <div className="absolute bottom-0 left-1/2 -translate-x-1/2 bg-[#6C33C9] z-0 h-[5rem] w-1/2 rounded-full blur-[10rem] select-none" />
             <img
               src="/benefits/stay-on-developers-mind-image.svg"
               alt="stay-on-developers-mind-image"
-              className="absolute left-0 max-h-[186px] w-full"
+              className="absolute bottom-0 left-0 w-full"
             />
             <img
               src="/benefits/stay-on-developers-mind-dots.png"

@@ -1,8 +1,8 @@
 /* eslint-disable @next/next/no-img-element */
 'use client';
 
+import { useEffect, useRef, useState } from 'react';
 import Image from 'next/image';
-import { motion } from 'framer-motion';
 
 import { processes } from '@/data/processes.data';
 import { SectionDescription } from '@/components/layout/section-description';
@@ -10,8 +10,35 @@ import { SectionTitle } from '@/components/layout/section-title';
 import { cn } from '@/lib/utils';
 
 export function ProcessSection() {
+  const lineRef: any = useRef(null);
+  const [scrollPosition, setScrollPosition] = useState<number>(0);
+
+  useEffect(() => {
+    const updatePosition = () => {
+      const line = lineRef.current;
+
+      if (window.scrollY > line.offsetTop && window.scrollY < line.offsetTop + line.clientHeight) {
+        setScrollPosition(window.scrollY - line.offsetTop);
+      } else if (window.scrollY < line.offsetTop) {
+        setScrollPosition(0);
+      } else if (window.scrollY > line.offsetTop + line.clientHeight) {
+        setScrollPosition(92);
+      }
+    };
+
+    window.addEventListener('scroll', updatePosition);
+    updatePosition();
+
+    return () => {
+      window.removeEventListener('scroll', updatePosition);
+    };
+  }, []);
+
   return (
-    <section className="section flex flex-col justify-between items-center gap-16 z-10 bg-scroll relative max-sm:gap-8">
+    <section
+      className="section flex flex-col justify-between items-center gap-16 z-10 bg-scroll relative max-sm:gap-8"
+      ref={lineRef}
+    >
       <header className="w-full flex items-center gap-[6px]">
         <div
           className="flex-1 max-md:hidden h-[82px]"
@@ -42,11 +69,19 @@ export function ProcessSection() {
       </header>
       <div className="w-full pt-16 flex flex-col gap-[179px] items-center relative min-h-[1264px] max-w-[1135px] mx-auto px-[38px] max-md:px-0 max-md:gap-10">
         <Image
-          src="/scroll-line.png"
+          src="/scroll-line.svg"
           alt="Scroll Line"
           width={3}
-          height={1264}
-          className="absolute top-20 left-0 min-h-[92%] max-md:hidden"
+          height={0}
+          className="absolute top-20 left-0 min-h-[93%] object-cover max-md:hidden"
+        />
+        <Image
+          src="/scroll-line-over.svg"
+          alt="Scroll Line"
+          width={3}
+          height={0}
+          style={{ height: scrollPosition }}
+          className="absolute top-20 left-0 z-1 max-h-[93%] max-md:hidden object-cover"
         />
         {processes.map((processItem, index) => (
           <div
@@ -65,16 +100,13 @@ export function ProcessSection() {
                 alt={processItem.title}
                 width={391}
                 height={324}
-                className={cn('z-20', {
-                  'absolute left-20 max-md:relative max-md:left-0':
-                    processItem.title === 'Topic Selection and Article Preparation',
-                })}
+                className="z-20 absolute left-0 max-md:left-0 w-full"
               />
               <img
                 src="/processes/dots.png"
                 alt="dots"
                 className={cn('absolute z-10', {
-                  'left-16': processItem.title === 'Topic Selection and Article Preparation',
+                  'left-16': index == 0,
                 })}
               />
               <div className="absolute inset-0 z-10 select-none bg-[#6C33C9] h-full rounded-full blur-[7rem] opacity-30" />
